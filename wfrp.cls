@@ -30,6 +30,54 @@
     \end{figure}
 }
 
+\newcommand{\statblockmagic}[4]{
+    \begin{figure}
+    \rule{\columnwidth}{1pt}
+
+    {\bfseries \scshape \large #1}
+    \vspace{0.125cm}
+
+    {\footnotesize
+        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
+        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
+            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
+            \textbf{Fel} & \textbf{W} \\ \midrule
+        #2
+        \\ \bottomrule
+        \end{tabular*}
+    }
+
+    \textbf{Abilities:} #3
+
+    \textbf{Spells:} #4
+    \rule{\columnwidth}{1pt}
+    \end{figure}
+}
+
+\newcommand{\statblockreligious}[4]{
+    \begin{figure}
+    \rule{\columnwidth}{1pt}
+
+    {\bfseries \scshape \large #1}
+    \vspace{0.125cm}
+
+    {\footnotesize
+        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
+        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
+            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
+            \textbf{Fel} & \textbf{W} \\ \midrule
+        #2
+        \\ \bottomrule
+        \end{tabular*}
+    }
+
+    \textbf{Abilities:} #3
+
+    \textbf{Blessings \& miracles:} #4
+    \rule{\columnwidth}{1pt}
+    \end{figure}
+}
+
 \newcommand{\statblockfull}[5] {
     \begin{figure}
     \rule{\columnwidth}{1pt}
@@ -51,6 +99,60 @@
     \textbf{Talents:} #4
 
     \textbf{Trappings:} #5
+    \rule{\columnwidth}{1pt}
+    \end{figure}
+}
+
+\newcommand{\statblockfullmagic}[6]{
+    \begin{figure}
+    \rule{\columnwidth}{1pt}
+    {\bfseries \scshape \large #1}
+    \vspace{0.125cm}
+
+    {\footnotesize
+        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
+        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
+            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
+            \textbf{Fel} & \textbf{W} \\ \midrule
+        #2
+        \\ \bottomrule
+        \end{tabular*}
+    }
+
+    \textbf{Skills:} #3
+
+    \textbf{Talents:} #4
+
+    \textbf{Spells:} #5
+
+    \textbf{Trappings:} #6
+    \rule{\columnwidth}{1pt}
+    \end{figure}
+}
+
+\newcommand{\statblockfullreligious}[6]{
+    \begin{figure}
+    \rule{\columnwidth}{1pt}
+    {\bfseries \scshape \large #1}
+    \vspace{0.125cm}
+
+    {\footnotesize
+        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
+        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
+            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
+            \textbf{Fel} & \textbf{W} \\ \midrule
+        #2
+        \\ \bottomrule
+        \end{tabular*}
+    }
+
+    \textbf{Skills:} #3
+
+    \textbf{Talents:} #4
+
+    \textbf{Blessings \& miracles:} #5
+
+    \textbf{Trappings:} #6
     \rule{\columnwidth}{1pt}
     \end{figure}
 }
