@@ -10,6 +10,7 @@
 
 \newcommand{\statblock}[3]{
     \begin{figure}
+    \raggedright
     \rule{\columnwidth}{1pt}
 
     {\bfseries \scshape \large #1}
@@ -32,6 +33,7 @@
 
 \newcommand{\statblockmagic}[4]{
     \begin{figure}
+    \raggedright
     \rule{\columnwidth}{1pt}
 
     {\bfseries \scshape \large #1}
@@ -56,6 +58,7 @@
 
 \newcommand{\statblockreligious}[4]{
     \begin{figure}
+    \raggedright
     \rule{\columnwidth}{1pt}
 
     {\bfseries \scshape \large #1}
@@ -80,6 +83,7 @@
 
 \newcommand{\statblockfull}[5] {
     \begin{figure}
+    \raggedright
     \rule{\columnwidth}{1pt}
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
@@ -105,6 +109,7 @@
 
 \newcommand{\statblockfullmagic}[6]{
     \begin{figure}
+    \raggedright
     \rule{\columnwidth}{1pt}
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
@@ -132,6 +137,7 @@
 
 \newcommand{\statblockfullreligious}[6]{
     \begin{figure}
+    \raggedright
     \rule{\columnwidth}{1pt}
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
