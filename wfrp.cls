@@ -8,18 +8,6 @@
 
 \RequirePackage{booktabs}
 
-\newcommand{\statblockbegin}{
-\begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
-\textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
-    \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
-    \textbf{Fel} & \textbf{W} \\ \midrule
-}
-
-\newcommand{\statblockend}{
-    \\ \bottomrule
-    \end{tabular*}
-}
-
 \newcommand{\statblock}[3]{
     \begin{figure}
     \rule{\columnwidth}{1pt}
@@ -27,7 +15,15 @@
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
 
-    {\footnotesize \statblockbegin{} #2 \statblockend{}}
+    {\footnotesize
+        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
+        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
+            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
+            \textbf{Fel} & \textbf{W} \\ \midrule
+        #2
+        \\ \bottomrule
+        \end{tabular*}
+    }
 
     \textbf{Abilities:} #3
     \rule{\columnwidth}{1pt}
@@ -40,7 +36,15 @@
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
 
-    {\footnotesize \statblockbegin{} #2 \statblockend{}}
+    {\footnotesize
+        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
+        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
+            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
+            \textbf{Fel} & \textbf{W} \\ \midrule
+        #2
+        \\ \bottomrule
+        \end{tabular*}
+    }
 
     \textbf{Skills:} #3
 
