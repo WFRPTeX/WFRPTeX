@@ -9,11 +9,10 @@
 \RequirePackage{booktabs}
 
 \newcommand{\statblockbegin}{
-    \begin{tabular*}{\columnwidth}{cccccccccccc}
-    \toprule
-    \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
-        \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{Fel} &
-        \textbf{W} \\ \midrule
+\begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
+\textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
+    \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
+    \textbf{Fel} & \textbf{W} \\ \midrule
 }
 
 \newcommand{\statblockend}{
@@ -26,7 +25,7 @@
     \rule{\columnwidth}{1pt}
 
     {\bfseries \scshape \large #1}
-    \vspace{0.25cm}
+    \vspace{0.125cm}
 
     {\footnotesize \statblockbegin{} #2 \statblockend{}}
 
@@ -39,7 +38,7 @@
     \begin{figure}
     \rule{\columnwidth}{1pt}
     {\bfseries \scshape \large #1}
-    \vspace{0.25cm}
+    \vspace{0.125cm}
 
     {\footnotesize \statblockbegin{} #2 \statblockend{}}
 
@@ -52,4 +51,4 @@
     \end{figure}
 }
 
-\RequirePackage[left=0.5in,right=0.5in,top=1in,bottom=1in]{geometry}
+\RequirePackage[left=0.25in,right=0.25in,top=1in,bottom=1in]{geometry}
