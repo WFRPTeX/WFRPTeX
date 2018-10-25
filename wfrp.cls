@@ -56,7 +56,7 @@
     \end{figure}
 }
 
-\newcommand{\statblockreligious}[4]{
+\newcommand{\statblockreligious}[5]{
     \begin{figure}
     \raggedright
     \rule{\columnwidth}{1pt}
@@ -76,7 +76,9 @@
 
     \textbf{Abilities:} #3
 
-    \textbf{Blessings \& miracles:} #4
+    \textbf{Blessings:} #4
+
+    \textbf{Miracles:} #5
     \rule{\columnwidth}{1pt}
     \end{figure}
 }
@@ -135,7 +137,7 @@
     \end{figure}
 }
 
-\newcommand{\statblockfullreligious}[6]{
+\newcommand{\statblockfullreligious}[7]{
     \begin{figure}
     \raggedright
     \rule{\columnwidth}{1pt}
@@ -156,9 +158,11 @@
 
     \textbf{Talents:} #4
 
-    \textbf{Blessings \& miracles:} #5
+    \textbf{Blessings:} #5
 
-    \textbf{Trappings:} #6
+    \textbf{Miracles:} #6
+
+    \textbf{Trappings:} #7
     \rule{\columnwidth}{1pt}
     \end{figure}
 }
