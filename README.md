@@ -20,7 +20,7 @@ machine, that's ``/home/me/texmf/tex/latex``.
 To make use of the class, use ``\documentclass{wfrp}`` at the top of your main
 file. Currently, the ``wfrp`` class has no options. The key feature of the class
 is a series of ``\statblock`` commands that take varying numbers of arguments. These are
-detailed below.
+detailed below:
 
  * ``\statblock``
 
@@ -32,3 +32,15 @@ detailed below.
        \statblock{Street Thug}
            {4 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 12}
            {Armour +1, Weapon +7}
+
+ * ``\statblockfull``
+
+   This is similar to ``\statblock``, but is designed to provide a fuller stat block
+   suitable for key NPCs. It takes five arguments: name, stats, skills, talents, and
+   trappings.
+
+       \statblockfull{Street Thug}
+           {4 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 12}
+           {Melee (Brawling) +5, Cool +5, Dodge +5}
+           {Street Fighting}
+           {Knuckledusters, Club, Bottle of ale}
