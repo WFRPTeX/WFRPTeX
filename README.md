@@ -27,4 +27,8 @@ detailed below.
    This command creates a simple stat block similar to those presented in the Bestiary.
    It takes three arguments: the name of the creature/NPC in the stat block, its
    stats including Movement and Wounds, formatted like a tabular row, and a list of
-   creature abilities.
+   creature abilities. Example:
+
+       \statblock{Street Thug}
+           {4 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 12}
+           {Armour +1, Weapon +7}
