@@ -44,3 +44,31 @@ detailed below:
            {Melee (Brawling) +5, Cool +5, Dodge +5}
            {Street Fighting}
            {Knuckledusters, Club, Bottle of ale}
+
+ * ``\statblockmagic`` and ``\statblockfullmagic``
+
+   These two commands extend the basic ``\statblock`` and ``\statblockfull`` by accepting
+   an extra argument providing a list of spells known to the character. For the short stat
+   block, the extra argument is given at the end; for the full block, the argument comes
+   just before the character's trappings.
+
+       \statblockfullmagic{Street Wizard}
+           {4 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 12}
+           {Melee (Brawling) +5, Cool +5, Dodge +5, Channelling (Aqshy) +5, Language (Magick) +5}
+           {Street Fighting, Petty Magic}
+           {Dart}
+           {Knuckledusters, Club, Bottle of ale}
+
+ * ``\statblockreligious`` and ``\statblockfullreligious``
+
+   These two commands are similar to the previous two, except that they allow for specifying
+   Blessings and Miracles known to the character, instead of Spells. They provide two extra
+   arguments compared to their base forms, given in the same order as for the magic stat blocks.
+
+       \statblockfullreligious{Street Preacher}
+           {4 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 12}
+           {Melee (Brawling) +5, Cool +5, Dodge +5, Pray +5}
+           {Street Fighting, Bless (Ranald)}
+           {Protection}
+           {\textit{None}}
+           {Knuckledusters, Club, Bottle of ale}
