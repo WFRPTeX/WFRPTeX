@@ -34,7 +34,7 @@
     {\bfseries\centering\Huge}{\scshape\Large Chapter \thechapter\\}{0pt}{\uppercase{#1}}
 
 \titleformat{\section}[block]
-    {\bfseries\Large}{}{0pt}{\uppercase{#1}}
+    {\bfseries\Large}{}{0pt}{\uppercase{#1}}[{\titlerule[1pt]}]
 
 \titleformat{\subsection}[block]
     {\bfseries\Large}{}{0pt}{\scshape #1}
