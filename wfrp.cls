@@ -22,6 +22,7 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage{kerkis}
 
+\RequirePackage{array}
 \RequirePackage{booktabs}
 \RequirePackage{mdframed}
 \RequirePackage{xcolor}
@@ -29,6 +30,10 @@
 \newenvironment{callout}
     {\begin{mdframed}[backgroundcolor=lightgray] \itshape}
     {\end{mdframed}}
+
+\newenvironment{gmnote}
+    {\begin{table}\begin{tabular}{p{\columnwidth}}\toprule\textsc{GM note}\tabularnewline\midrule}
+    {\tabularnewline\bottomrule\end{tabular}\end{table}}
 
 \newcommand{\statblock}[3]{
     \begin{figure}
