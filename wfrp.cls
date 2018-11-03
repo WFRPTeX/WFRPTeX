@@ -23,6 +23,12 @@
 \RequirePackage{kerkis}
 
 \RequirePackage{booktabs}
+\RequirePackage{mdframed}
+\RequirePackage{xcolor}
+
+\newenvironment{callout}
+    {\begin{mdframed}[backgroundcolor=lightgray] \itshape}
+    {\end{mdframed}}
 
 \newcommand{\statblock}[3]{
     \begin{figure}
