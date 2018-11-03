@@ -19,7 +19,7 @@
 
 \LoadClass[11pt,a4paper,twocolumn]{report}
 
-\RequirePackage{kerkis}
+\RequirePackage{baskervald}
 \RequirePackage{yfonts}
 \RequirePackage[T1]{fontenc}
 
