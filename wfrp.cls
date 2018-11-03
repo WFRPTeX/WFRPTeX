@@ -37,8 +37,8 @@
     {\begin{mdframed}[backgroundcolor=lightgray] \itshape}
     {\end{mdframed}}
 
-\newenvironment{gmnote}
-    {\begin{table}\begin{tabular}{p{\columnwidth}}\toprule\textsc{GM note}\tabularnewline\midrule}
+\newenvironment{gmnote}[1]
+    {\begin{table}\begin{tabular}{p{\columnwidth}}\toprule\textsc{GM note:~#1}\tabularnewline\midrule}
     {\tabularnewline\bottomrule\end{tabular}\end{table}}
 
 \newcommand{\statblock}[3]{

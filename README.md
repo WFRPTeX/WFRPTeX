@@ -36,9 +36,10 @@ made italic.
 In places, it may be helpful to add extra notes for the GM describing optional
 changes they might like to make to an adventure, such as contingencies for if players
 make ridiculous choices and kill the antagonist before the adventure's even begun.
-To mark these out, use the ``gmnote`` environment. This environment is a float.
+To mark these out, use the ``gmnote`` environment. This environment is a float, and
+takes one argument, which is the title of the note.
 
-    \begin{gmnote}
+    \begin{gmnote}{Sample note}
     In case the players have already killed Graf Sebastian, go straight to the
     conclusion of the adventure.
     \end{gmnote}
