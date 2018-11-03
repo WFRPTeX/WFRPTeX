@@ -56,7 +56,7 @@
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
 
-    {\footnotesize
+    {\setlength\tabcolsep{4.8pt}\footnotesize
         \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
         \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
             \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
@@ -79,7 +79,7 @@
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
 
-    {\footnotesize
+    {\setlength\tabcolsep{4.8pt}\footnotesize
         \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
         \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
             \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
@@ -104,7 +104,7 @@
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
 
-    {\footnotesize
+    {\setlength\tabcolsep{4.8pt}\footnotesize
         \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
         \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
             \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
@@ -130,7 +130,7 @@
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
 
-    {\footnotesize
+    {\setlength\tabcolsep{4.8pt}\footnotesize
         \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
         \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
             \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
@@ -156,7 +156,7 @@
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
 
-    {\footnotesize
+    {\setlength\tabcolsep{4.8pt}\footnotesize
         \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
         \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
             \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
@@ -184,7 +184,7 @@
     {\bfseries \scshape \large #1}
     \vspace{0.125cm}
 
-    {\footnotesize
+    {\setlength\tabcolsep{4.8pt}\footnotesize
         \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
         \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
             \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
@@ -207,4 +207,5 @@
     \end{figure}
 }
 
-\RequirePackage[left=0.25in,right=0.25in,top=1in,bottom=1in]{geometry}
+\RequirePackage[left=0.5in,right=0.5in,top=1in,bottom=1in]{geometry}
+\setlength\columnsep{2\columnsep}
