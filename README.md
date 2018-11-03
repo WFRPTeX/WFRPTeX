@@ -18,7 +18,33 @@ machine, that's ``/home/me/texmf/tex/latex``.
 ## Usage
 
 To make use of the class, use ``\documentclass{wfrp}`` at the top of your main
-file. Currently, the ``wfrp`` class has no options. The key feature of the class
+file. Currently, the ``wfrp`` class has no options.
+
+### Player callouts
+
+Often, it is useful to mark a paragraph as intended for reading out to the players
+(e.g., descriptions of important NPCs). To make these, simply use the ``callout``
+environment. By default, the callout will be shaded light grey, and the text will be
+made italic.
+
+    \begin{callout}
+    This paragraph is meant to be read out to players, as description.
+    \end{callout}
+
+### Notes for the GM
+
+In places, it may be helpful to add extra notes for the GM describing optional
+changes they might like to make to an adventure, such as contingencies for if players
+make ridiculous choices and kill the antagonist before the adventure's even begun.
+To mark these out, use the ``gmnote`` environment. This environment is a float.
+
+    \begin{gmnote}
+    In case the players have already killed Graf Sebastian, go straight to the
+    conclusion of the adventure.
+    \end{gmnote}
+
+### Stat blocks
+The key feature of the class
 is a series of ``\statblock`` commands that take varying numbers of arguments. These are
 detailed below:
 
