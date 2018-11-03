@@ -19,13 +19,19 @@
 
 \LoadClass[11pt,a4paper,twocolumn]{report}
 
-\RequirePackage[T1]{fontenc}
 \RequirePackage{kerkis}
+\RequirePackage{yfonts}
+\RequirePackage[T1]{fontenc}
 
 \RequirePackage{array}
 \RequirePackage{booktabs}
 \RequirePackage{mdframed}
 \RequirePackage{xcolor}
+
+\RequirePackage{titlesec}
+\titleformat{\chapter}[block]
+    {\centering\swabfamily\Huge}{\centering\LARGE Chapter \thechapter\\}{10pt}{}
+
 
 \newenvironment{callout}
     {\begin{mdframed}[backgroundcolor=lightgray] \itshape}
