@@ -28,9 +28,16 @@
 \RequirePackage{mdframed}
 \RequirePackage{xcolor}
 
-\RequirePackage{titlesec}
+\RequirePackage[explicit]{titlesec}
+
 \titleformat{\chapter}[block]
-    {\centering\swabfamily\Huge}{\centering\LARGE Chapter \thechapter\\}{10pt}{}
+    {\centering\Huge}{\uppercase{#1}}{10pt}{}
+
+\titleformat{\section}[block]
+    {\bfseries\Large}{\uppercase{#1}}{0pt}{}
+
+\titleformat{\subsection}[block]
+    {\bfseries\Large}{\textsc{#1}}{0pt}{}
 
 
 \newenvironment{callout}
