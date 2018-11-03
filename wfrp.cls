@@ -31,13 +31,13 @@
 \RequirePackage[explicit]{titlesec}
 
 \titleformat{\chapter}[block]
-    {\centering\Huge}{\uppercase{#1}}{10pt}{}
+    {\bfseries\centering\Huge}{\scshape\Large Chapter \thechapter\\}{0pt}{\uppercase{#1}}
 
 \titleformat{\section}[block]
-    {\bfseries\Large}{\uppercase{#1}}{0pt}{}
+    {\bfseries\Large}{}{0pt}{\uppercase{#1}}
 
 \titleformat{\subsection}[block]
-    {\bfseries\Large}{\textsc{#1}}{0pt}{}
+    {\bfseries\Large}{}{0pt}{\scshape #1}
 
 
 \newenvironment{callout}
