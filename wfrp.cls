@@ -45,8 +45,11 @@
     {\end{mdframed}}
 
 \newenvironment{gmnote}[1]
-    {\begin{table}\begin{tabular}{p{\columnwidth}}\toprule\textsc{GM note:~#1}\tabularnewline\midrule}
-    {\tabularnewline\bottomrule\end{tabular}\end{table}}
+    {\begin{mdframed}[backgroundcolor=lightgray] 
+        \setlength\parindent{0pt}
+        {\vspace{5pt} \centering {\footnotesize GM NOTE} \\ \Large \uppercase{#1} \vspace{10pt} \\}
+    }
+    {\end{mdframed}}
 
 \newcommand{\statblock}[3]{
     \begin{figure}
