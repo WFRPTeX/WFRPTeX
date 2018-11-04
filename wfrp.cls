@@ -39,6 +39,9 @@
 \titleformat{\subsection}[block]
     {\bfseries\Large}{}{0pt}{\scshape #1}
 
+\titleformat{\subsubsection}[block]
+    {\bfseries\large}{}{0pt}{#1}
+
 
 \newenvironment{callout}
     {\begin{mdframed}[backgroundcolor=lightgray] \itshape}
