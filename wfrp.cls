@@ -28,6 +28,9 @@
 \RequirePackage{mdframed}
 \RequirePackage{xcolor}
 
+\setlength\parindent{0pt}
+\setlength\parskip{6pt minus2pt}
+
 \RequirePackage[explicit]{titlesec}
 
 \titleformat{\chapter}[block]
@@ -49,7 +52,6 @@
 
 \newenvironment{gmnote}[1]
     {\begin{mdframed}[backgroundcolor=lightgray,shadow=true,shadowsize=2pt,shadowcolor=black] 
-        \setlength\parindent{0pt}
         {\vspace{5pt} \centering {\footnotesize GM NOTE} \\ \Large \uppercase{#1} \vspace{10pt} \\}
     }
     {\end{mdframed}}
