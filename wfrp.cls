@@ -29,21 +29,24 @@
 \RequirePackage{xcolor}
 
 \setlength\parindent{0pt}
-\setlength\parskip{6pt minus2pt}
+\setlength\parskip{10pt plus6pt minus6pt}
 
 \RequirePackage[explicit]{titlesec}
 
 \titleformat{\chapter}[block]
     {\bfseries\centering\Huge}{\scshape\Large Chapter \thechapter\\}{0pt}{\uppercase{#1}}
 
-\titleformat{\section}[block]
+\titleformat{\section}
     {\bfseries\Large}{}{0pt}{\uppercase{#1}}[{\titlerule[1pt]}]
+\titlespacing{\section}{0pt}{10pt}{0pt}
 
-\titleformat{\subsection}[block]
+\titleformat{\subsection}
     {\bfseries\Large}{}{0pt}{\scshape #1}
+\titlespacing{\subsection}{0pt}{10pt}{0pt}
 
-\titleformat{\subsubsection}[block]
+\titleformat{\subsubsection}
     {\bfseries\large}{}{0pt}{#1}
+\titlespacing{\subsubsection}{0pt}{10pt}{0pt}
 
 
 \newenvironment{callout}
