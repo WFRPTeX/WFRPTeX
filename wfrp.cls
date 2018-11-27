@@ -17,7 +17,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{wfrp}[2018/10/14 Class for writing WFRP adventures/material]
 
-\LoadClass[10pt,a4paper,twocolumn]{report}
+\LoadClass[a4paper,twocolumn]{report}
 
 \RequirePackage{baskervald}
 \RequirePackage{yfonts}
@@ -218,5 +218,5 @@
     \end{figure}
 }
 
-\RequirePackage[top=2.3cm,bottom=2cm,inner=2cm,outer=3cm]{geometry}
+\RequirePackage[top=2.3cm,bottom=2cm,inner=1.5cm,outer=2.5cm]{geometry}
 \setlength\columnsep{0.5cm}
