@@ -17,7 +17,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{wfrp}[2018/10/14 Class for writing WFRP adventures/material]
 
-\LoadClass[11pt,a4paper,twocolumn]{report}
+\LoadClass[10pt,a4paper,twocolumn]{report}
 
 \RequirePackage{baskervald}
 \RequirePackage{yfonts}
@@ -34,18 +34,18 @@
 \RequirePackage[explicit]{titlesec}
 
 \titleformat{\chapter}[block]
-    {\bfseries\centering\Huge}{\scshape\Large Chapter \thechapter\\}{0pt}{\uppercase{#1}}
+    {\bfseries\centering\fontsize{28pt}{33.6pt}\selectfont}{\scshape\Large Chapter \thechapter\\}{0pt}{\uppercase{#1}}
 
 \titleformat{\section}
-    {\bfseries\Large}{}{0pt}{\uppercase{#1}}[{\titlerule[1pt]}]
+    {\bfseries\fontsize{15pt}{18pt}\selectfont}{}{0pt}{\uppercase{#1}}[{\titlerule[1pt]}]
 \titlespacing{\section}{0pt}{10pt}{0pt}
 
 \titleformat{\subsection}
-    {\bfseries\Large}{}{0pt}{\scshape #1}
+    {\bfseries\fontsize{15pt}{18pt}\selectfont}{}{0pt}{\scshape #1}
 \titlespacing{\subsection}{0pt}{10pt}{0pt}
 
 \titleformat{\subsubsection}
-    {\bfseries\large}{}{0pt}{#1}
+    {\bfseries\fontsize{8.5pt}{10.2pt}\selectfont}{}{0pt}{#1}
 \titlespacing{\subsubsection}{0pt}{10pt}{0pt}
 
 
@@ -218,5 +218,5 @@
     \end{figure}
 }
 
-\RequirePackage[left=0.5in,right=0.5in,top=1in,bottom=1in]{geometry}
-\setlength\columnsep{2\columnsep}
+\RequirePackage[top=2.3cm,bottom=2cm,inner=2cm,outer=3cm]{geometry}
+\setlength\columnsep{0.5cm}
