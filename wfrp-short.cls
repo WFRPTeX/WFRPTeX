@@ -17,15 +17,13 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{wfrp-short}[2018/10/14 Class for writing WFRP adventures/material]
 
-\LoadClass[a4paper]{article}
+\LoadClass[a4paper,twocolumn]{article}
 
 \RequirePackage{baskervald}
 \RequirePackage{yfonts}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{wfrp}
-
-\setlength\parindent{0pt}
-\setlength\parskip{10pt plus6pt minus6pt}
+\RequirePackage{parskip}
 
 \RequirePackage[explicit]{titlesec}
 
