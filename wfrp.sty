@@ -22,13 +22,14 @@
 \RequirePackage{mdframed}
 \RequirePackage{xcolor}
 
+
 \newenvironment{callout}
-    {\begin{mdframed}[backgroundcolor=lightgray,hidealllines=true] \itshape}
+    {\begin{mdframed}[leftmargin=0.25cm,hidealllines=true] \itshape}
     {\end{mdframed}}
 
 \newenvironment{gmnote}[1]
-    {\begin{mdframed}[backgroundcolor=lightgray,shadow=true,shadowsize=2pt,shadowcolor=black] 
-        {\vspace{5pt} \centering {\footnotesize GM NOTE} \\ \Large \uppercase{#1} \vspace{10pt} \\}
+    {\begin{mdframed}[backgroundcolor=lightgray] 
+        {\vspace{5pt} \centering \Large \uppercase{#1} \vspace{10pt} \\}
     }
     {\end{mdframed}}
 
