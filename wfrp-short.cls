@@ -27,9 +27,6 @@
 
 \RequirePackage[explicit]{titlesec}
 
-\titleformat{\chapter}[block]
-    {\bfseries\centering\fontsize{28pt}{33.6pt}\selectfont}{\scshape\Large Chapter \thechapter\\}{0pt}{\uppercase{#1}}
-
 \titleformat{\section}
     {\bfseries\fontsize{15pt}{18pt}\selectfont}{}{0pt}{\uppercase{#1}}[{\titlerule[1pt]}]
 \titlespacing{\section}{0pt}{10pt}{0pt}
