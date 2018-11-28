@@ -2,9 +2,8 @@
 
 ## Description
 
-This package provides a new LaTeX class useful for creating fan-made WFRP content.
-It provides some useful environments and commands for formatting stat blocks,
-and sets fonts, page margins, etc. for easy reading.
+This repository provides two new LaTeX classes for creating WFRP-style documents,
+along with a package giving some useful environments.
 
 ## Copyright and license
 
@@ -17,8 +16,15 @@ machine, that's ``/home/me/texmf/tex/latex``.
 
 ## Usage
 
-To make use of the class, use ``\documentclass{wfrp}`` at the top of your main
-file. Currently, the ``wfrp`` class has no options.
+The two classes provided by this repository are ``wfrp-long`` and ``wfrp-short``.
+The first is meant to resemble something more like the Core Rulebook; the second is
+more suitable for documents like standalone adventures. Neither class currently
+accepts any options. These classes automatically include the ``wfrp`` package, so
+there's no need to include it separately---it's provided for anyone wanting to make
+documents with different styles.
+
+The following different callouts are provided by the ``wfrp`` package, which are
+automatically available in both of the two document classes.
 
 ### Player callouts
 
