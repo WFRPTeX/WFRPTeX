@@ -20,8 +20,7 @@
 \LoadClass[9pt,a4paper,twocolumn]{extarticle}
 
 \RequirePackage{extsizes}
-\RequirePackage{baskervald}
-\RequirePackage{yfonts}
+\RequirePackage{Baskervaldx}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{wfrp}
 \RequirePackage[toc]{multitoc}
