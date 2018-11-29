@@ -17,16 +17,15 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{wfrp-long}[2018/10/14 Class for writing WFRP adventures/material]
 
-\RequirePackage{extsizes}
 \LoadClass[9pt,a4paper,twocolumn]{extreport}
 
+\RequirePackage{extsizes}
 \RequirePackage{baskervald}
 \RequirePackage{yfonts}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{wfrp}
 \RequirePackage[toc]{multitoc}
 \RequirePackage{parskip}
-
 \RequirePackage[explicit]{titlesec}
 
 \titleformat{\chapter}[block]
@@ -46,3 +45,5 @@
 
 \RequirePackage[top=2.3cm,bottom=2cm,inner=1.5cm,outer=2.5cm]{geometry}
 \setlength\columnsep{0.5cm}
+
+\endinput
