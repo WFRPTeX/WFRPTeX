@@ -17,7 +17,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{wfrp-long}[2018/10/14 Class for writing WFRP adventures/material]
 
-\LoadClass[a4paper,twocolumn]{report}
+\RequirePackage{extsizes}
+\LoadClass[9pt,a4paper,twocolumn]{extreport}
 
 \RequirePackage{baskervald}
 \RequirePackage{yfonts}
@@ -32,15 +33,15 @@
     {\bfseries\centering\fontsize{28pt}{33.6pt}\selectfont}{\scshape\Large Chapter \thechapter\\}{0pt}{\uppercase{#1}}
 
 \titleformat{\section}
-    {\bfseries\fontsize{15pt}{18pt}\selectfont}{}{0pt}{\uppercase{#1}}[{\titlerule[1pt]}]
+    {\bfseries\fontsize{17pt}{20.4pt}\selectfont}{}{0pt}{\uppercase{#1}}[{\titlerule[1pt]}]
 \titlespacing{\section}{0pt}{10pt}{0pt}
 
 \titleformat{\subsection}
-    {\bfseries\fontsize{15pt}{18pt}\selectfont}{}{0pt}{\scshape #1}
+    {\bfseries\fontsize{14pt}{16.8pt}\selectfont}{}{0pt}{\scshape #1}
 \titlespacing{\subsection}{0pt}{10pt}{0pt}
 
 \titleformat{\subsubsection}
-    {\bfseries\fontsize{8.5pt}{10.2pt}\selectfont}{}{0pt}{#1}
+    {\bfseries\fontsize{11pt}{13.2pt}\selectfont}{}{0pt}{#1}
 \titlespacing{\subsubsection}{0pt}{10pt}{0pt}
 
 \RequirePackage[top=2.3cm,bottom=2cm,inner=1.5cm,outer=2.5cm]{geometry}
