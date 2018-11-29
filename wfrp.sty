@@ -24,12 +24,12 @@
 
 
 \newenvironment{callout}
-    {\begin{mdframed}[leftmargin=0.25cm,hidealllines=true] \itshape}
+    {\begin{mdframed}[innerleftmargin=0.25cm,usetwoside=false,hidealllines=true] \itshape}
     {\end{mdframed}}
 
 \newenvironment{gmnote}[1]
-    {\begin{mdframed}[backgroundcolor=lightgray] 
-        {\vspace{5pt} \centering \Large \uppercase{#1} \vspace{10pt} \\}
+    {\begin{mdframed}[backgroundcolor=lightgray,innerleftmargin=0.5cm,innerrightmargin=0.5cm,usetwoside=false] 
+        {\centering \fontsize{14pt}{16.8pt}\selectfont \uppercase{#1} \par}
     }
     {\end{mdframed}}
 
