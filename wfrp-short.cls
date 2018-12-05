@@ -20,8 +20,8 @@
 \LoadClass[9pt,a4paper,twocolumn]{extarticle}
 
 \RequirePackage{extsizes}
-\RequirePackage{Baskervaldx}
 \RequirePackage[T1]{fontenc}
+\RequirePackage{librecaslon}
 \RequirePackage{wfrp}
 \RequirePackage[toc]{multitoc}
 \RequirePackage{parskip}
@@ -39,7 +39,7 @@
     {\bfseries\fontsize{11pt}{13.2pt}\selectfont}{}{0pt}{#1}
 \titlespacing{\subsubsection}{0pt}{10pt}{0pt}
 
-\RequirePackage[top=2.3cm,bottom=2cm,inner=1.5cm,outer=2.5cm]{geometry}
+\RequirePackage[top=2.3cm,bottom=2cm,inner=2cm,outer=2cm]{geometry}
 \setlength\columnsep{0.5cm}
 
 \endinput
