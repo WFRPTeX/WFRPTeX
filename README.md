@@ -11,8 +11,9 @@ Copyright (c) 2018 Ian Knight.
 
 ## Installation
 
-Either clone this repository, or copy the ``.cls`` file, into your TeX root. On my
-machine, that's ``/home/me/texmf/tex/latex``.
+Both class files and the package file should be placed somewhere in your TeX root. For me,
+that's in ``/home/wfrptex/texmf/tex/latex``. You can either clone the reposository into
+that directory, or download the files directly and copy them there.
 
 ## Usage
 
