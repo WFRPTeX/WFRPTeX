@@ -17,7 +17,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{wfrp-long}[2018/10/14 Class for writing WFRP adventures/material]
 
-\LoadClass[9pt,a4paper,twocolumn]{extreport}
+\LoadClass[8pt,a4paper,twocolumn]{extreport}
 
 \RequirePackage{extsizes}
 \RequirePackage{Baskervaldx}
@@ -36,13 +36,14 @@
 
 \titleformat{\subsection}
     {\bfseries\fontsize{14pt}{16.8pt}\selectfont}{}{0pt}{\scshape #1}
-\titlespacing{\subsection}{0pt}{10pt}{0pt}
+\titlespacing{\subsection}{0pt}{10pt}{-6pt}
 
 \titleformat{\subsubsection}
     {\bfseries\fontsize{11pt}{13.2pt}\selectfont}{}{0pt}{#1}
-\titlespacing{\subsubsection}{0pt}{10pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{10pt}{-6pt}
 
 \RequirePackage[top=2.3cm,bottom=2cm,inner=1.5cm,outer=2.5cm]{geometry}
 \setlength\columnsep{0.5cm}
+\setlength\baselineskip{12pt}
 
 \endinput

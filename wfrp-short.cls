@@ -17,7 +17,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{wfrp-short}[2018/10/14 Class for writing WFRP adventures/material]
 
-\LoadClass[9pt,a4paper,twocolumn]{extarticle}
+\LoadClass[8pt,a4paper,twocolumn]{extarticle}
 
 \RequirePackage{extsizes}
 \RequirePackage{Baskervaldx}
@@ -41,5 +41,6 @@
 
 \RequirePackage[top=2.3cm,bottom=2cm,inner=1.5cm,outer=2.5cm]{geometry}
 \setlength\columnsep{0.5cm}
+\setlength\baselineskip{12pt}
 
 \endinput
