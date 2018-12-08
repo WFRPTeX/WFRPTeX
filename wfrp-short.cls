@@ -17,9 +17,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{wfrp-short}[2018/10/14 Class for writing WFRP adventures/material]
 
-\LoadClass[8pt,a4paper,twocolumn]{extarticle}
+\LoadClass[a4paper,twocolumn]{article}
 
-\RequirePackage{extsizes}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{librecaslon}
 \RequirePackage{wfrp}
@@ -40,7 +39,8 @@
 \titlespacing{\subsubsection}{0pt}{10pt}{0pt}
 
 \RequirePackage[top=2.3cm,bottom=2cm,inner=2cm,outer=2cm]{geometry}
+
+\renewcommand{\normalsize}{\fontsize{8.5pt}{12pt}\selectfont}
 \setlength\columnsep{0.5cm}
-\setlength\baselineskip{12pt}
 
 \endinput
