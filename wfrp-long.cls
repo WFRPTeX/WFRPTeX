@@ -41,9 +41,15 @@
     {\bfseries\fontsize{11pt}{13.2pt}\selectfont}{}{0pt}{#1}
 \titlespacing{\subsubsection}{0pt}{10pt}{-6pt}
 
+\newenvironment{credits}
+    {\begin{center}\onecolumn
+        {\fontsize{22pt}{25pt}\selectfont CREDITS\\\vspace{25pt}}
+    }
+    {\\\vfill{}Typeset using WFRP\TeX{} by Ian Knight \end{center}\newpage} 
+
 \RequirePackage[top=2.3cm,bottom=2cm,inner=2cm,outer=2cm]{geometry}
 
-\renewcommand{\normalsize}{\fontsize{8.5pt}{12pt}\selectfont}
+\renewcommand{\normalsize}{\fontsize{8.5pt}{15pt}\selectfont}
 \setlength{\columnsep}{0.5cm}
 
 \endinput
