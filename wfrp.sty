@@ -1,5 +1,5 @@
-% WFRPTeX---LaTeX class for producing WFRP content
-% Copyright (C) 2018 Ian Knight
+% WFRPTeX---LaTeX package for producing WFRP content
+% Copyright (C) 2018--2019 Ian Knight
 %
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
