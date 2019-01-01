@@ -1,5 +1,109 @@
 \documentclass[10pt,a4paper]{article}
 
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage{inconsolata}
+
+\usepackage[top=1.5in,bottom=1in,left=1in,right=1in]{geometry}
+
+\title{WFRP\TeX{} Documentation, Version 1.0.0}
+\author{Ian Knight}
+\date{}
+
 \begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+WFRP\TeX{} is a \LaTeX{} package that comes with two new document classes
+designed to make it easier to create WFRP content in \LaTeX{}. This document
+will describe how to use the key features of the package to create your
+own adventures and source material.
+
+
+\section{Document classes}
+There are two document classes provided by WFRP\TeX{}, for different kinds
+of documents. At present, neither class takes any options, so just name the
+class like normal. Both classes use exactly the same commands, so just pick
+the one that fits your use-case the best.
+
+\paragraph{\texttt{wfrp-long}} The first class is for longer documents that
+are divided into chapters, like the Core Rulebook.
+
+\paragraph{\texttt{wfrp-short}} The second class is for shorter documents
+that do not have separate chapters, such as shorter adventure supplements.
+
+
+\section{Commands and Environments}
+The main contribution of the package is a number of environments and
+commands that simplify the creation of common features of WFRP documents.
+These are described in this section.
+
+\subsection{Environments}
+Three environments are provided for the typesetting of particular kinds
+of text.
+
+\paragraph{\texttt{credits}} The \texttt{credits} environment is used to
+create a credits block in your document. If you use one, there should be
+only one \texttt{credits} environment in your document, between
+\texttt{\textbackslash{}maketitle} and \texttt{\textbackslash{}tableofcontents}.
+In \texttt{wfrp-long} this will create a separate page with the credits,
+while in \texttt{wfrp-short} the left-hand column on the first page after
+the title will contain the credits. This environment will automatically
+insert a line crediting WFRP\TeX{}.
+
+\paragraph{\texttt{callout}} Adventures often provide pre-written pieces of
+narration to read out to the players. Use the \texttt{callout} environment
+to mark these sections. Text inside the environment will be slightly indented
+and italicised, but otherwise text will be presented as written, in-line.
+
+\paragraph{\texttt{gmnote}} Often it is useful to provide additional optional
+information, either optional rules or notes in an adventure that only apply
+to nice situations. The \texttt{gmnote} environment allows the creation of
+these rules. The environment takes a single argument which is the note's
+title, and then the environment contents are presented in normal text. The
+box is shaded grey, and appears in-line.
+
+\subsection{Commands}
+At present there is only one new command provided, but it's a big one: it
+allows for the creation of stat blocks! Unlike the blocks in official material,
+WFRP\TeX{} stat blocks fit in a single column, making your documents slightly
+more compact.
+
+\paragraph{\texttt{\textbackslash{}statblock}} The \texttt{\textbackslash{}statblock}
+command is quite complicated. It takes a total of eight arguments, and an
+optional ninth. The general form of the command is as follows:
+\begin{verbatim}
+\statblock[pos]{Character name}
+    {Characteristics}
+    {Abilities}
+    {Skills}
+    {Talents}
+    {Spells}
+    {Blessings & miracles}
+    {Trappings}
+\end{verbatim}
+The different arguments provide the following information for the stat block:
+\begin{itemize}
+    \item \texttt{pos} controls the positioning of the stat block in the same
+            way as any other float environment; this is an optional argument,
+            and if omitted it defaults to \texttt{ht}
+    \item \texttt{Character name} is the name of the character appearing in the
+            stat block's title
+    \item \texttt{Characteristics} is a series of 12 numbers separated by
+            \texttt{\&} characters providing the character's characteristics
+            (see the stat blocks in the Core Rulebook for the expected ordering)
+    \item \texttt{Abilities} lists any abilities possessed by the character
+            that are drawn from those presented in the Core Rulebook Bestiary
+    \item \texttt{Skills} lists any skills with advances held by the character
+    \item \texttt{Talents} lists any talents held by the character
+    \item \texttt{Spells} lists any spells known by the character
+    \item \texttt{Blessings \& miracles} lists any blessings or miracles the 
+            character is able to manifest
+    \item \texttt{Trappings} lists whatever equipment the character carries
+\end{itemize}
+Any of these entries other than the character name and the characteristics may
+be left blank; the typesetter will only add lines to the stat block for entries
+that have text in them.
 
 \end{document}
