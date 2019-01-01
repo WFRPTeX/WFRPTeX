@@ -34,12 +34,12 @@
     }
     {\end{mdframed}}
 
-\newcommand{\statblock}[3]{
-    \begin{figure}
+\newcommand{\statblock}[4][h]{
+    \begin{figure}[#1]
     \raggedright
     \rule{\columnwidth}{1pt}
 
-    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #1}
+    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #2}
     \vspace{0.125cm}
 
     {\setlength\tabcolsep{4.8pt}\fontsize{6.5pt}{6.5pt}\selectfont
@@ -47,22 +47,22 @@
         \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
             \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
             \textbf{Fel} & \textbf{W} \\ \midrule
-        #2
+        #3
         \\ \bottomrule
         \end{tabular*}
     }
 
-    \textbf{Abilities:} #3
+    \textbf{Abilities:} #4
     \rule{\columnwidth}{1pt}
     \end{figure}
 }
 
-\newcommand{\statblockmagic}[4]{
-    \begin{figure}
+\newcommand{\statblockmagic}[5][h]{
+    \begin{figure}[#1]
     \raggedright
     \rule{\columnwidth}{1pt}
 
-    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #1}
+    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #2}
     \vspace{0.125cm}
 
     {\setlength\tabcolsep{4.8pt}\fontsize{6.5pt}{6.5pt}\selectfont
@@ -70,104 +70,76 @@
         \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
             \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
             \textbf{Fel} & \textbf{W} \\ \midrule
-        #2
+        #3
         \\ \bottomrule
         \end{tabular*}
     }
 
-    \textbf{Abilities:} #3
-
-    \textbf{Spells:} #4
-    \rule{\columnwidth}{1pt}
-    \end{figure}
-}
-
-\newcommand{\statblockreligious}[5]{
-    \begin{figure}
-    \raggedright
-    \rule{\columnwidth}{1pt}
-
-    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #1}
-    \vspace{0.125cm}
-
-    {\setlength\tabcolsep{4.8pt}\fontsize{6.5pt}{6.5pt}\selectfont
-        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
-        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
-            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
-            \textbf{Fel} & \textbf{W} \\ \midrule
-        #2
-        \\ \bottomrule
-        \end{tabular*}
-    }
-
-    \textbf{Abilities:} #3
-
-    \textbf{Blessings:} #4
-
-    \textbf{Miracles:} #5
-    \rule{\columnwidth}{1pt}
-    \end{figure}
-}
-
-\newcommand{\statblockfull}[5] {
-    \begin{figure}
-    \raggedright
-    \rule{\columnwidth}{1pt}
-    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #1}
-    \vspace{0.125cm}
-
-    {\setlength\tabcolsep{4.8pt}\fontsize{6.5pt}{6.5pt}\selectfont
-        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
-        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
-            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
-            \textbf{Fel} & \textbf{W} \\ \midrule
-        #2
-        \\ \bottomrule
-        \end{tabular*}
-    }
-
-    \textbf{Skills:} #3
-
-    \textbf{Talents:} #4
-
-    \textbf{Trappings:} #5
-    \rule{\columnwidth}{1pt}
-    \end{figure}
-}
-
-\newcommand{\statblockfullmagic}[6]{
-    \begin{figure}
-    \raggedright
-    \rule{\columnwidth}{1pt}
-    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #1}
-    \vspace{0.125cm}
-
-    {\setlength\tabcolsep{4.8pt}\fontsize{6.5pt}{6.5pt}\selectfont
-        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
-        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
-            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
-            \textbf{Fel} & \textbf{W} \\ \midrule
-        #2
-        \\ \bottomrule
-        \end{tabular*}
-    }
-
-    \textbf{Skills:} #3
-
-    \textbf{Talents:} #4
+    \textbf{Abilities:} #4
 
     \textbf{Spells:} #5
+    \rule{\columnwidth}{1pt}
+    \end{figure}
+}
+
+\newcommand{\statblockreligious}[6][h]{
+    \begin{figure}[#1]
+    \raggedright
+    \rule{\columnwidth}{1pt}
+
+    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #2}
+    \vspace{0.125cm}
+
+    {\setlength\tabcolsep{4.8pt}\fontsize{6.5pt}{6.5pt}\selectfont
+        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
+        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
+            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
+            \textbf{Fel} & \textbf{W} \\ \midrule
+        #3
+        \\ \bottomrule
+        \end{tabular*}
+    }
+
+    \textbf{Abilities:} #4
+
+    \textbf{Blessings:} #5
+
+    \textbf{Miracles:} #6
+    \rule{\columnwidth}{1pt}
+    \end{figure}
+}
+
+\newcommand{\statblockfull}[6][h] {
+    \begin{figure}[#1]
+    \raggedright
+    \rule{\columnwidth}{1pt}
+    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #2}
+    \vspace{0.125cm}
+
+    {\setlength\tabcolsep{4.8pt}\fontsize{6.5pt}{6.5pt}\selectfont
+        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
+        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
+            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
+            \textbf{Fel} & \textbf{W} \\ \midrule
+        #3
+        \\ \bottomrule
+        \end{tabular*}
+    }
+
+    \textbf{Skills:} #4
+
+    \textbf{Talents:} #5
 
     \textbf{Trappings:} #6
     \rule{\columnwidth}{1pt}
     \end{figure}
 }
 
-\newcommand{\statblockfullreligious}[7]{
-    \begin{figure}
+\newcommand{\statblockfullmagic}[7][h]{
+    \begin{figure}[#1]
     \raggedright
     \rule{\columnwidth}{1pt}
-    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #1}
+    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #2}
     \vspace{0.125cm}
 
     {\setlength\tabcolsep{4.8pt}\fontsize{6.5pt}{6.5pt}\selectfont
@@ -175,20 +147,48 @@
         \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
             \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
             \textbf{Fel} & \textbf{W} \\ \midrule
-        #2
+        #3
         \\ \bottomrule
         \end{tabular*}
     }
 
-    \textbf{Skills:} #3
+    \textbf{Skills:} #4
 
-    \textbf{Talents:} #4
+    \textbf{Talents:} #5
 
-    \textbf{Blessings:} #5
-
-    \textbf{Miracles:} #6
+    \textbf{Spells:} #6
 
     \textbf{Trappings:} #7
+    \rule{\columnwidth}{1pt}
+    \end{figure}
+}
+
+\newcommand{\statblockfullreligious}[8][h]{
+    \begin{figure}[#1]
+    \raggedright
+    \rule{\columnwidth}{1pt}
+    {\bfseries \scshape \fontsize{10.5pt}{10.5pt}\selectfont #2}
+    \vspace{0.125cm}
+
+    {\setlength\tabcolsep{4.8pt}\fontsize{6.5pt}{6.5pt}\selectfont
+        \begin{tabular*}{\columnwidth}{cccccccccccc}\toprule
+        \textbf{M} & \textbf{WS} & \textbf{BS} & \textbf{S} & \textbf{T} &
+            \textbf{I} & \textbf{Ag} & \textbf{Dex} & \textbf{Int} & \textbf{WP} &
+            \textbf{Fel} & \textbf{W} \\ \midrule
+        #3
+        \\ \bottomrule
+        \end{tabular*}
+    }
+
+    \textbf{Skills:} #4
+
+    \textbf{Talents:} #5
+
+    \textbf{Blessings:} #6
+
+    \textbf{Miracles:} #7
+
+    \textbf{Trappings:} #8
     \rule{\columnwidth}{1pt}
     \end{figure}
 }
