@@ -7,7 +7,7 @@ along with a package giving some useful environments.
 
 ## Copyright and license
 
-Copyright (c) 2018 Ian Knight.
+Copyright (c) 2018--2019 Ian Knight.
 
 ## Installation
 
@@ -52,57 +52,53 @@ takes one argument, which is the title of the note.
     \end{gmnote}
 
 ### Stat blocks
-The key feature of the class
-is a series of ``\statblock`` commands that take varying numbers of arguments. These are
-detailed below:
 
- * ``\statblock``
+The key feature of WFRPTeX is its ``statblock`` command, which allows for the
+automatic layout of stat blocks for NPCs. Its general usage is shown below, and
+then explained in detail:
 
-   This command creates a simple stat block similar to those presented in the Bestiary.
-   It takes three arguments: the name of the creature/NPC in the stat block, its
-   stats including Movement and Wounds, formatted like a tabular row, and a list of
-   creature abilities. Example:
+    \statblock[pos]{Character name}
+        {Characteristics}
+        {Abilities}
+        {Skills}
+        {Talents}
+        {Spells}
+        {Blessings & miracles}
+        {Trappings}
 
-       \statblock{Street Thug}
-           {4 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 12}
-           {Armour +1, Weapon +7}
+Note that the indentation here is arbitrary, and just makes the example easier to read.
+The different sections are interpreted as follows:
 
- * ``\statblockfull``
+* ``pos`` is a positioning modifier, using the same syntax as other float
+  environments; it may be omitted, in which case the default is ``ht``
+* ``Character name`` is self-explanatory
+* ``Characteristics`` is a series of 12 numbers, separated by & characters,
+  that will form the character's profile
+* ``Abilities`` lists the character's abilities (i.e., the rules found in the
+  Bestiary in the BRB)
+* ``Skills`` lists the character's skills; it is recommended that you use a
+  non-breaking space (i.e., ``~``) between the last word of the skill name and
+  the skill value (e.g., ``Lore (Local)~+5``)
+* ``Talents`` lists the character's talents
+* ``Spells`` lists any spells the character knows
+* ``Blessings & miracles`` lists any blessings or miracles the character is
+  able to perform
+* ``Trappings`` lists what equipment the character is carrying
 
-   This is similar to ``\statblock``, but is designed to provide a fuller stat block
-   suitable for key NPCs. It takes five arguments: name, stats, skills, talents, and
-   trappings.
+Any of these arguments may be left blank with the exception of the Characteristics.
+You still need to provide an empty pair of curly braces, but if you don't enter
+any text, the typesetter won't provide that row in the final stat block. For
+example, here's the stat block for an important NPC with no spells or miracles:
 
-       \statblockfull{Street Thug}
-           {4 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 12}
-           {Melee (Brawling) +5, Cool +5, Dodge +5}
-           {Street Fighting}
-           {Knuckledusters, Club, Bottle of ale}
-
- * ``\statblockmagic`` and ``\statblockfullmagic``
-
-   These two commands extend the basic ``\statblock`` and ``\statblockfull`` by accepting
-   an extra argument providing a list of spells known to the character. For the short stat
-   block, the extra argument is given at the end; for the full block, the argument comes
-   just before the character's trappings.
-
-       \statblockfullmagic{Street Wizard}
-           {4 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 12}
-           {Melee (Brawling) +5, Cool +5, Dodge +5, Channelling (Aqshy) +5, Language (Magick) +5}
-           {Street Fighting, Petty Magic}
-           {Dart}
-           {Knuckledusters, Club, Bottle of ale}
-
- * ``\statblockreligious`` and ``\statblockfullreligious``
-
-   These two commands are similar to the previous two, except that they allow for specifying
-   Blessings and Miracles known to the character, instead of Spells. They provide two extra
-   arguments compared to their base forms, given in the same order as for the magic stat blocks.
-
-       \statblockfullreligious{Street Preacher}
-           {4 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 30 & 12}
-           {Melee (Brawling) +5, Cool +5, Dodge +5, Pray +5}
-           {Street Fighting, Bless (Ranald)}
-           {Protection}
-           {\textit{None}}
-           {Knuckledusters, Club, Bottle of ale}
+    \statblock{Lukas Volf, Inquisitor}
+        {4 & 36 & 40 & 32 & 47 & 29 & 34 & 37 & 30 & 44 & 42 & 15}
+        {}
+        {Charm~+5, Consume Alcohol~+10, Cool~+10, Gossip~+10, Heal~+5,
+            Intimidate~+10, Intuition~+10, Leadership~+5, Lore (Chaos)~+10,
+            Lore (Torture)~+5, Lore (Witches)~+10, Melee (Brawling)~+5,
+            Perception~+5, Ranged (Crossbow)~+10, Ride (Horse)~+10}
+        {Menacing, Read/Write, Seasoned Traveller}
+        {}
+        {}
+        {Crossbow pistol (24 bolts), Daggers (4), Leaden charm, Riding horse,
+            Saddle \& tack, Silvered sword, Torture instruments}
