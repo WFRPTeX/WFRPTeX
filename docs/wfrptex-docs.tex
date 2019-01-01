@@ -40,7 +40,8 @@ commands that simplify the creation of common features of WFRP documents.
 These are described in this section.
 
 \subsection{Environments}
-Three environments are provided.
+Three environments are provided for the typesetting of particular kinds
+of text.
 
 \paragraph{\texttt{credits}} The \texttt{credits} environment is used to
 create a credits block in your document. If you use one, there should be
@@ -63,5 +64,46 @@ these rules. The environment takes a single argument which is the note's
 title, and then the environment contents are presented in normal text. The
 box is shaded grey, and appears in-line.
 
+\subsection{Commands}
+At present there is only one new command provided, but it's a big one: it
+allows for the creation of stat blocks! Unlike the blocks in official material,
+WFRP\TeX{} stat blocks fit in a single column, making your documents slightly
+more compact.
+
+\paragraph{\texttt{\textbackslash{}statblock}} The \texttt{\textbackslash{}statblock}
+command is quite complicated. It takes a total of eight arguments, and an
+optional ninth. The general form of the command is as follows:
+\begin{verbatim}
+\statblock[pos]{Character name}
+    {Characteristics}
+    {Abilities}
+    {Skills}
+    {Talents}
+    {Spells}
+    {Blessings & miracles}
+    {Trappings}
+\end{verbatim}
+The different arguments provide the following information for the stat block:
+\begin{itemize}
+    \item \texttt{pos} controls the positioning of the stat block in the same
+            way as any other float environment; this is an optional argument,
+            and if omitted it defaults to \texttt{ht}
+    \item \texttt{Character name} is the name of the character appearing in the
+            stat block's title
+    \item \texttt{Characteristics} is a series of 12 numbers separated by
+            \texttt{\&} characters providing the character's characteristics
+            (see the stat blocks in the Core Rulebook for the expected ordering)
+    \item \texttt{Abilities} lists any abilities possessed by the character
+            that are drawn from those presented in the Core Rulebook Bestiary
+    \item \texttt{Skills} lists any skills with advances held by the character
+    \item \texttt{Talents} lists any talents held by the character
+    \item \texttt{Spells} lists any spells known by the character
+    \item \texttt{Blessings \& miracles} lists any blessings or miracles the 
+            character is able to manifest
+    \item \texttt{Trappings} lists whatever equipment the character carries
+\end{itemize}
+Any of these entries other than the character name and the characteristics may
+be left blank; the typesetter will only add lines to the stat block for entries
+that have text in them.
 
 \end{document}
